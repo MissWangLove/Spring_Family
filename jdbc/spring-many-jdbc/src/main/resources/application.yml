@@ -1,0 +1,20 @@
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+spring:
+    output:
+        ansi:
+            enabled: always
+
+foo:
+    datasource:
+        url: jdbc:mysql://localhost:3306/spring_family?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+        username: root
+        password: nrblwbb7
+bar:
+    datasource:
+        url: jdbc:mysql://localhost:3306/spring_family_test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=true
+        username: root
+        password: nrblwbb7
