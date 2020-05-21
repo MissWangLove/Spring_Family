@@ -27,7 +27,7 @@ public class DeclarativeTransactionService {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    @Transactional(rollbackOn = RollbackException.class)
+    @Transactional(rollbackOn = RollbackException.class, value = Transactional.TxType.REQUIRES_NEW)
     public void insertRecord() {
         jdbcTemplate.execute("INSERT INTO FOO (NAME) VALUES ('AAA')");
     }

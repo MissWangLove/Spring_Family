@@ -22,6 +22,11 @@ PlatformTransactionManager中有说明.
 | PROPAGATION_NEVER | 5 | 不支持事务,如果有事务就抛异常 |
 | PROPAGATION_NESTED | 6 | 当前有事务就在当前事务中再起一个事务 |
 
+PROPAGATION_REQUIRES_NEW: 两个事务之间没有任何关系
+
+PROPAGATION_NESTED: 两个事务是内嵌的, 外部事务回滚,内部事务也会回滚
+
+
 默认是 PROPAGATION_REQUIRED.
 
 事务的隔离特性:
