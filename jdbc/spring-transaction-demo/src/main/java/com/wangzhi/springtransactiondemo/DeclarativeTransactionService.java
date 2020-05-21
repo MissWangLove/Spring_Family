@@ -39,7 +39,10 @@ public class DeclarativeTransactionService {
     }
 
     /**
-     * 通过AOP代理的方式进行声明式事务的, 此方法没有事务, 所以没有被代理
+     * 通过AOP代理的方式进行声明式事务的, 此方法没有事务, 所以没有被代理<br/>
+     * 如果想要被代理,应该怎么做?<br/>
+     *  - 可以注入 DeclarativeTransactionService, 来在方法内调用 declarativeTransactionServiceinsertThenRollback();<br/>
+     *  - 或者给当前方法加上事务的注解<br/>
      * @throws RollbackException
      */
     public void invokeInsertThenRollback() throws RollbackException {

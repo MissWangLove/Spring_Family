@@ -40,3 +40,10 @@ PlatformTransactionManager中有说明.
  ##### 声明式事务
  
  DeclarativeTransactionService演示
+ 
+ Spring声明式事务的本质上是通过AOP来增强类的功能
+ 
+ Spring的AOP的本质就是为类做了一个代理(看似在调用自己写的类,实际上用的是增强后的代理类)
+ 
+ 
+ 
