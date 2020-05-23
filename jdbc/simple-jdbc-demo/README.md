@@ -3,6 +3,7 @@
 #### 基础知识
 
 常用的Bean注解:
+
 - @Component
 - @Repository
 - @Service
@@ -10,6 +11,7 @@
     - @RestController
     
 JdbcTemplate常用方法:
+
 - query
 - queryForObject
 - queryForList
@@ -17,6 +19,7 @@ JdbcTemplate常用方法:
 - execute(通用方法)
 
 SQL批处理:
+
 - JdbcTemplate
     - batchUpdate
         - BatchPreparedStatementSetter
@@ -25,6 +28,7 @@ SQL批处理:
         - SqlParameterSourceUtils.createBatch
         
 案例演示:
+
 - 依然使用Druid数据源,对数据库密码进行一个加密
 - fooDO展示的是与数据库对应的实体类
 - dao下的FooDao展示了JdbcTemplate的基本使用

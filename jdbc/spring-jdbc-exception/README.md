@@ -1,4 +1,4 @@
-## Spring JDBC事务抽象
+## Spring JDBC异常抽象
 
 #### DataAccessException
 

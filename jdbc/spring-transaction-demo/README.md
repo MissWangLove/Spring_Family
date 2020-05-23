@@ -10,7 +10,7 @@ PlatformTransactionManager中有说明.
 
 #### 事务的传播特性
 
-传播特性是在 TransactionDefinition 接口中声明的
+传播特性是在 TransactionDefinition 接口中声明的:
 
 |  传播性   | 值  |  描述  |
 |  ----  | ----  | --- |
