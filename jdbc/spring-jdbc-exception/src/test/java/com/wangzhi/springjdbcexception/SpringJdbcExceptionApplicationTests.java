@@ -26,4 +26,9 @@ public class SpringJdbcExceptionApplicationTests {
         jdbcTemplate.execute("INSERT INTO FOO(ID, NAME) VALUES (104, 'hewiwjfeiowj123')");
     }
 
+    public static void main(String[] args) {
+        Double a = null;
+        System.out.println(a == null);
+    }
+
 }
