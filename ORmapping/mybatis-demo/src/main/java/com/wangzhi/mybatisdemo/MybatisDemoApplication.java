@@ -12,6 +12,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Date;
 
+/**
+ * CommandLineRunner和ApplicationRunner的区别在于后者可以更好的获取命令行参数
+ */
 @SpringBootApplication
 @Slf4j
 public class MybatisDemoApplication implements CommandLineRunner {
